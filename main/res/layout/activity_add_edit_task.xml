@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:layout_below="@id/editTextTitle"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Priority (e.g., 1, 2, 3)"
+        android:inputType="number"
+        android:layout_below="@id/editTextDescription"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Date (e.g., 2023-07-30)"
+        android:inputType="date"
+        android:layout_below="@id/editTextPriority"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Task"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextDueDate" />
+</RelativeLayout>
